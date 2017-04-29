@@ -19,13 +19,21 @@ console.log(computerGuess)
 		//wins
 		console.log("user wins")
 		wins = wins + 1
+		alert("You Win!")
+
 	} 
 	else {
 		//loose
 		//alert("try again")
-		losses = losses + 1
+		
+		GuessesLeft = GuessesLeft - 1
+		if (GuessesLeft ===0){
+			losses = losses + 1
+			GuessesLeft = 9
+		$("#YourGuessesSoFar .count").text("")
+		} 
 	}
-	GuessesLeft = GuessesLeft - 1
+
 
 	console.log(GuessesLeft)
 	console.log(wins)
@@ -35,6 +43,7 @@ console.log(computerGuess)
 	$("#Losses .count").text(losses)
 	$("#GuessesLeft .count").text(GuessesLeft)
 	$("#YourGuessesSoFar .count").append(userguess+", ")
+
 
 
 }

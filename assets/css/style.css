@@ -1,0 +1,23 @@
+body {
+	background: url("../images/wood_pattern.png");
+	
+}
+*{
+	box-sizing: border-box;
+}
+
+.container {
+font-family: 'Orbitron', sans-serif, bold;
+
+}
+
+#Wins, #Losses, #GuessesLeft, #YourGuessesSoFar {
+	font-family: 'Orbitron', sans-serif;
+	font-size: 20px;
+
+}
+
+h1 {
+	padding-top: 50px;
+}
+
